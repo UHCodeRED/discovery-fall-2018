@@ -9,6 +9,7 @@ $(document).ready(function(){
         var numOfStars = Math.floor(Math.random() * 10) +1;
         var maxX = width + width/2;
         var maxY = height + height/2;
+        $("#stars-big").empty();
 
         for(var i=0; i<numOfStars; i++){
             var randX = Math.floor(Math.random() * maxX);
@@ -23,6 +24,7 @@ $(document).ready(function(){
         var numOfStars = Math.floor(Math.random() * 15) +5;
         var maxX = width + width/4;
         var maxY = height + height/4;
+        $("#stars-med").empty();
 
         for(var i=0; i<numOfStars; i++){
         
@@ -38,6 +40,7 @@ $(document).ready(function(){
         var numOfStars = Math.floor(Math.random() * 20) +10;
         var maxX = width + width/10;
         var maxY = height + height/10;
+        $("#stars-small").empty();
 
         for(var i=0; i<numOfStars; i++){
         
