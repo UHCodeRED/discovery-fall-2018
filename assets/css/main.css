@@ -6,6 +6,7 @@ body{
 	background-color: black;
 	font-family: 'Overpass-web', sans-serif;
 	font-size: 20px;
+	color: #ccc;
 }
 h1, h2 {
 	text-transform: uppercase;
@@ -108,10 +109,14 @@ a:hover {
 	position: absolute;
 }
 
-.content{
-    color:white;
-    padding: 50px;
-    line-height: 40px;
+#content {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 2;
 }
 
 .columns {
@@ -206,6 +211,10 @@ h1#codered-logo>img{
 	padding-top: 32px;
 	animation: zoom-in 1.5s cubic-bezier(0.165, 0.84, 0.44, 1),
 		fade-in 1.5s linear;
+}
+@keyframes zoom-in {
+	0% { transform: scale(0.5); }
+	100% { transform: scale(1); }
 }
 
 .event-info .columns {
