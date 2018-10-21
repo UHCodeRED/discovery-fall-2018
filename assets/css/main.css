@@ -90,6 +90,10 @@ a:hover {
 #container{
     background-color: black;
 }
+
+canvas{
+	position: fixed;
+}
 #stars-container{
 	position: fixed;
 	width: 100%;
