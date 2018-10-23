@@ -449,3 +449,11 @@ div.section-head {
 	display: block;
 	color: #aea29b;
   }
+
+
+  #schedule th{
+	  border-right: solid 2px #575757;
+  }
+  #schedule th.white{
+	  border-color: #fff;
+  }
