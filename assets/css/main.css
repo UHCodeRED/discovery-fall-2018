@@ -255,6 +255,7 @@ h1#codered-logo>img{
 #main-actions {
 	flex: 0 0 auto;
 	text-align: center;
+	margin-top: 20px;
 }
 
 #apply-btn {
@@ -272,6 +273,8 @@ h1#codered-logo>img{
 	text-transform: uppercase;
 	animation: float-down 3s cubic-bezier(0.165, 0.84, 0.44, 1),
 		fade-in 3s linear;
+	animation: zoom-in 2s cubic-bezier(0.165, 0.84, 0.44, 1),
+		fade-in 2s linear;
 }
 
 #apply-btn::before {
