@@ -8,6 +8,9 @@
     <title>CodeRED</title>
     <link rel='shortcut icon' type='image/x-icon' href='/assets/images/favicon.ico' />
     <link rel="stylesheet" href="./assets/css/main.css"/>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 
@@ -170,125 +173,145 @@
                     <!--#################################-->
 
                     <div id="schedule" class="section">
-                            <div class="section-head">
-                                <h1>Schedule</h1>
-                                <h2>What's happening: when and where</h2>
+                        <div class="section-head">
+                            <h1>Schedule</h1>
+                            <h2>What's happening: when and where</h2>
+                        </div>
+
+                        <div class="section-content columns">
+                            <div class="column-box">
+                                <h3>Saturday.Nov.03</h3>
+                                <table>
+                                    <tr>
+                                        <th>10:00A</th>
+                                        <td>
+                                            <p>Doors open for attendee check-in<br>
+                                            <small>Student Center South</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="white">12:00P</th>
+                                        <td>
+                                            <p>Opening ceremony<br>
+                                            <small>Student Center South</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">1:00P</th>
+                                        <td>
+                                            <p>Hacking begins<br>
+                                            <small>Student Center South</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Lunch served<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="white">6:00P</th>
+                                        <td>
+                                            <p>PROS Workshop: So Many Features, So Little Time!<br>
+                                                <small>Learn the agile methodology in a workshop which simulates the challenges and pitfalls of developing a software product.</small>
+                                                <br/><br/>
+                                                <small>Classroom &amp; Business Building</small><br/>
+                                                <small>Room 310</small>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>7:00P</th>
+                                        <td>
+                                            <p>Dinner served<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="white">10:00P</th>
+                                        <td>
+                                            <p>Mini-event<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
-
-                            <div class="section-content columns">
-                                <div class="column-box">
-                                    <h3>Saturday.Nov.03</h3>
-                                    <table>
-                                        <tr>
-                                            <th>10:00A</th>
-                                            <td>
-                                                <p>Doors open for attendee check-in<br>
-                                                <small>Student Center South</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="white">12:00P</th>
-                                            <td>
-                                                <p>Opening ceremony<br>
-                                                <small>Student Center South</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th rowspan="2">1:00P</th>
-                                            <td>
-                                                <p>Hacking begins<br>
-                                                <small>Student Center South</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>Lunch served<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="white">6:00P</th>
-                                            <td>
-                                                <p>PROS Workshop: So Many Features, So Little Time!<br>
-                                                    <small>Learn the agile methodology in a workshop which simulates the challenges and pitfalls of developing a software product.</small>
-                                                    <br/><br/>
-                                                    <small>Classroom &amp; Business Building</small><br/>
-                                                    <small>Room 310</small>
-                                                </p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th>7:00P</th>
-                                            <td>
-                                                <p>Dinner served<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="white">10:00P</th>
-                                            <td>
-                                                <p>Mini-event<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="column-box">
-                                    <h3>Sunday.Nov.04</h3>
-                                    <table>
-                                        <tr>
-                                            <th class="white">1:00A</th>
-                                            <td>
-                                                <p>Midnight snack<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2:00A</th>
-                                            <td>
-                                                <p>Mini-event<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="white">7:00A</th>
-                                            <td>
-                                                <p>Breakfast served<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th rowspan="2">12:00P</th>
-                                            <td>
-                                                <p>Hacking ends!<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>Lunch served<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="white">1:00P</th>
-                                            <td>
-                                                <p>Judging begins<br>
-                                                <small>Classroom &amp; Business Building</small></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2:00P &ndash; 3:00P</th>
-                                            <td>
-                                                <p>Closing ceremony<br>
-                                                <small>Student Center South</small></p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
+                            <div class="column-box">
+                                <h3>Sunday.Nov.04</h3>
+                                <table>
+                                    <tr>
+                                        <th class="white">1:00A</th>
+                                        <td>
+                                            <p>Midnight snack<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>2:00A</th>
+                                        <td>
+                                            <p>Mini-event<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="white">7:00A</th>
+                                        <td>
+                                            <p>Breakfast served<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">12:00P</th>
+                                        <td>
+                                            <p>Hacking ends!<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Lunch served<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="white">1:00P</th>
+                                        <td>
+                                            <p>Judging begins<br>
+                                            <small>Classroom &amp; Business Building</small></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>2:00P &ndash; 3:00P</th>
+                                        <td>
+                                            <p>Closing ceremony<br>
+                                            <small>Student Center South</small></p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="section" id="parking">
+                        <div class="section-head">
+                            <h1>Location</h1>
+                            <h2>Where you'll be for 24h</h2>
+                        </div>
+                        <div class="note">
+                            <p>
+                                CodeRED Discovery will take place at the <a href="https://www.google.com/maps/place/University+of+Houston/" target="_blank">University of Houston Main Campus</a>.<br>
+                            </p>
+                        </div>
+                        <div id="legend">
+                            <div id="parking-legend"><span class="color"></span>Parking</div>
+                            <div id="theater-legend"><span class="color"></span>Theater room (Opening/Closing ceremony)</div>
+                            <div id="cbb-legend"><span class="color"></span>Classroom and business building</div>
+                        </div>
+                        <div class="section-content">
+                            <div id='map' style='width: 100%; height: 400px;'></div>
+                        </div>
+                    </div>
 
                 <!--#################################-->
                 <div id="sponsors" class="section">
@@ -359,6 +382,132 @@
             </div>
         </div>
     </div>
+
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidWhjb2RlcmVkIiwiYSI6ImNqbng4dmJvdjB5aGwzeHJ3YmJ6Y3lubjkifQ.zTzoFHBT9vrAHE6zJahwkg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/basic-v9',
+        zoom: 15,
+        center: [-95.338553, 29.720371]
+    });
+
+    var nav = new mapboxgl.NavigationControl({showCompas: false});
+    map.addControl(nav, 'top-left');
+
+    map.on('load', function () {
+
+        map.addLayer({
+            'id': '20A',
+            'type': 'fill',
+            'source': {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Polygon',
+                        'coordinates': [[[-95.338180, 29.720317],
+                            [-95.337345, 29.720031],
+                            [-95.337294, 29.719892],
+                            [-95.336362, 29.720102],
+                            [-95.336195, 29.719460],
+                            [-95.337112, 29.719262],
+                            [-95.337153, 29.719402],
+                            [-95.338365, 29.719826],
+                            [-95.338180, 29.720317]]]
+                    }
+                }
+            },
+            'layout': {},
+            'paint': {
+                'fill-color': '#cb0000',
+                'fill-opacity': 0.8
+            }
+        });
+
+        map.addLayer({
+            'id': '20C',
+            'type': 'fill',
+            'source': {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Polygon',
+                        'coordinates': [[[-95.337091,29.719192],
+                            [-95.336171,29.719401],
+                            [-95.335812, 29.718120],
+                            [-95.336027, 29.718078],
+                            [-95.337132, 29.718772],
+                            [-95.337197, 29.718975],
+                            [-95.337056, 29.719035],
+                            [-95.337091,29.719192]
+                        ]]
+                    }
+                }
+            },
+            'layout': {},
+            'paint': {
+                'fill-color': '#cb0000',
+                'fill-opacity': 0.8
+            }
+        });
+
+        map.addLayer({
+            'id': 'Theater',
+            'type': 'fill',
+            'source': {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Polygon',
+                        'coordinates': [[[-95.341270, 29.720670],
+                            [-95.340187, 29.720346],
+                            [-95.340219, 29.720267],
+                            [-95.339956, 29.720190],
+                            [-95.340042, 29.719938],
+                            [-95.339720, 29.719845],
+                            [-95.339800, 29.719638],
+                            [-95.341471, 29.720172],
+                            [-95.341270, 29.720670]
+                        ]]
+                    }
+                }
+            },
+            'layout': {},
+            'paint': {
+                'fill-color': '#00cbcb',
+                'fill-opacity': 0.8
+            }
+        });
+
+        map.addLayer({
+            'id': 'CBB',
+            'type': 'fill',
+            'source': {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Polygon',
+                        'coordinates': [[[-95.340792, 29.721826],
+                            [-95.340074, 29.721608],
+                            [-95.340203, 29.721300],
+                            [-95.340922, 29.721522],
+                            [-95.340792, 29.721826]
+                        ]]
+                    }
+                }
+            },
+            'layout': {},
+            'paint': {
+                'fill-color': '#545454',
+                'fill-opacity': 0.8
+            }
+        });
+    });
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollify.js"></script>
