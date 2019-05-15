@@ -258,7 +258,8 @@ h1#codered-logo>img{
 	margin-top: 20px;
 }
 
-#apply-btn {
+#apply-btn,
+#sponsors-btn {
 	display: inline-block;
 	padding: 10px 22px 6px 32px;
     background-color: rgba(255,255,255,0.1);
@@ -277,7 +278,8 @@ h1#codered-logo>img{
 		fade-in 2s linear;
 }
 
-#apply-btn::before {
+#apply-btn::before,
+#sponsors-btn::before {
 	font-weight: 300;
 	display: inline-block;
 	content: '>';
@@ -285,7 +287,8 @@ h1#codered-logo>img{
 	transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-#apply-btn::after {
+#apply-btn::after,
+#sponsors-btn::after {
 	font-weight: 300;
 	display: inline-block;
 	content: '<';
@@ -302,12 +305,15 @@ h1#codered-logo>img{
 }
 
 #apply-btn:hover::before,
-#apply-btn:hover::after {
+#apply-btn:hover::after,
+#sponsors-btn:hover::before,
+#sponsors-btn:hover::after {
 	transform: translateX(0);
 	opacity: 1;
 }
 
-#apply-btn:active {
+#apply-btn:active,
+#sponsors-btn:active {
 	color: rgba(203, 0, 0, 1);
 	background-color: rgba(203,0,0,0.25);
 	border-color: rgba(203,0,0,1);
